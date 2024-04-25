@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "PT Serif", serif;
+}
+
+h1.main-title {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+}
+
+.container {
+  margin-top: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eeeeee;
+  color: #212121;
+}
+
+.accordion {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 8rem;
+}
+
+.accordion-item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem #555;
+}
+
+.accordion-item.selected {
+  border-top: 0.2rem solid #32e0c4;
+}
+
+.accordion-item .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.top .num {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ccc;
+}
+
+.num.selected {
+  color: #32e0c4;
+  opacity: 0.7;
+}
+
+.top .title {
+  font-size: 3rem;
+}
+
+.title.selected {
+  color: #32e0c4;
+}
+
+.top .toggle {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.toggle.selected {
+  font-weight: 400;
+}
+
+.bottom {
+  text-align: justify;
+}
